@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Navigator - Login</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url('background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            background: #FFFFFF; /* White Background */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Career Navigator Logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .logo-container img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo-container h1 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333; /* Dark Grey */
+        }
+
+        .container h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333; /* Dark Grey */
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #333; /* Dark Grey */
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc; /* Light Grey Border */
+            border-radius: 8px;
+            outline: none;
+            background: #F8F8F8; /* Very Light Grey */
+        }
+
+        /* Forgot Password */
+        .forgot-password {
+            text-align: right;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        .forgot-password a {
+            color: #333; /* Dark Grey */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background: #333; /* Dark Grey Button */
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #555; /* Slightly Lighter Grey */
+        }
+
+        .signup {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .signup a {
+            color: #333; /* Dark Grey */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .signup a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Career Navigator Logo -->
+        <div class="logo-container">
+            <img src="logo.png" alt="Career Navigator Logo"> 
+            <h1>Career Navigator</h1>
+        </div>
+
+        <h2>LOGIN TO YOUR ACCOUNT</h2>
+        <form>
+            <div class="input-group">
+                <label>Username:</label>
+                <input type="text" placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label>Email Address:</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+            <div class="input-group">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password">
+            </div>
+            
+            <div class="forgot-password">
+                <a href="#">Forgot your password?</a>
+            </div>
+
+            <button class="login-btn">LOGIN</button>
+            <p class="signup">Don’t have an account? <a href="#">Sign Up now</a></p>
+        </form>
+    </div>
+</body>
+</html>
